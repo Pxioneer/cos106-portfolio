@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planner — PXION</title>
+  <meta name="description" content="Interactive academic task planner." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">PXION</span>
+        <span class="logo-sub">Atlas Creative · Lagos</span>
+      </a>
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html" aria-current="page">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero wrap">
+      <span class="eyebrow">Academic management</span>
+      <h1 class="page-title">Planner</h1>
+      <p>Add assignments, mark them done as you go, remove what's no longer relevant. Saved in your browser — it'll be here next time.</p>
+    </section>
+
+    <section class="section">
+      <div class="wrap" style="max-width:760px;">
+
+        <form id="plannerForm" class="planner-bar" aria-label="Add a new task">
+          <label for="taskInput" class="sr-only">Task description</label>
+          <input type="text" id="taskInput" name="taskInput" placeholder="e.g. Finish CSS module reading" required />
+          <label for="taskDue" class="sr-only">Due date (optional)</label>
+          <input type="date" id="taskDue" name="taskDue" aria-label="Due date (optional)" />
+          <button type="submit" class="btn btn--primary">Add task</button>
+        </form>
+
+        <div class="planner-stats">
+          <span><strong id="countTotal">0</strong> total</span>
+          <span><strong id="countOpen">0</strong> open</span>
+          <span><strong id="countDone">0</strong> done</span>
+        </div>
+
+        <ul class="task-list" id="taskList" aria-live="polite"></ul>
+        <p class="empty-state" id="emptyState">No tasks yet — add your first assignment above.</p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <span>© <span data-year>2026</span> Olalekan Afolami · Miva Open University</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

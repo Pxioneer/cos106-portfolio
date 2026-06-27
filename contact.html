@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — PXION</title>
+  <meta name="description" content="Get in touch with PXION for design or security work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">PXION</span>
+        <span class="logo-sub">Atlas Creative · Lagos</span>
+      </a>
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero wrap">
+      <span class="eyebrow">Get in touch</span>
+      <h1 class="page-title">Tell me what you're working on.</h1>
+      <p>Design brief, a bug you want a second pair of eyes on, or just a question — the form below reaches me directly.</p>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="contact-layout">
+
+          <form id="contactForm" class="form-grid" novalidate>
+            <div class="field">
+              <label for="nameInput">Name</label>
+              <input type="text" id="nameInput" name="name" autocomplete="name" />
+              <span class="field-error" id="nameError"></span>
+            </div>
+            <div class="field">
+              <label for="emailInput">Email address</label>
+              <input type="email" id="emailInput" name="email" autocomplete="email" />
+              <span class="field-error" id="emailError"></span>
+            </div>
+            <div class="field">
+              <label for="phoneInput">Phone number</label>
+              <input type="tel" id="phoneInput" name="phone" placeholder="Digits only" autocomplete="tel" />
+              <span class="field-error" id="phoneError"></span>
+            </div>
+            <div class="field">
+              <label for="messageInput">Message</label>
+              <textarea id="messageInput" name="message"></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+            <div>
+              <button type="submit" class="btn btn--primary">Send message</button>
+            </div>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+
+          <aside class="contact-aside">
+            <h3>Other ways to reach me</h3>
+            <dl class="fact-grid" style="grid-template-columns:1fr;">
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:olalekanafolami8@gmail.com" style="color:var(--accent);">a.olalekanafolami8@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Ikorodu, Lagos, Nigeria</dd>
+              </div>
+              <div>
+                <dt>Elsewhere</dt>
+                <dd style="display:flex;gap:1rem;flex-wrap:wrap;">
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener" style="color:var(--accent);">LinkedIn</a>
+                  <a href="https://github.com/" target="_blank" rel="noopener" style="color:var(--accent);">GitHub</a>
+                  <a href="https://www.youtube.com/" target="_blank" rel="noopener" style="color:var(--accent);">Scenoku</a>
+               <a href="https://www.instagram.com/" target="_blank" rel="noopener" style="color:var(--accent);">Instagram</a>
+                </dd>
+              </div>
+            </dl>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <span>© <span data-year>2026</span> Olalekan Afolami · Miva Open University</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
